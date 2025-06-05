@@ -1,0 +1,662 @@
+câu1: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Learning</title>
+  <style>
+    body{
+      margin: 0;
+      font-family: Rial, sans-serif;
+    }
+    header{
+      background-color: #2f63ff;
+      color: white;
+      padding: 20px 20px 20px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .logo{
+      display: inline-block;
+      padding: 5px;
+    }
+    h1{
+      margin:0;
+    }
+    nav{
+      background-color: #ffe700;
+      padding: 8px;
+      display:flex;
+      justify-content: center;
+    }
+    nav a {
+      color: grey;
+      text-decoration: none;
+      margin: 0 50px;
+      font-size: 15px;
+    }
+    nav a:hover {
+      color: white;
+    }
+    .content{
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    img{
+      max-width: 50%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class = "logo">
+      <svg width="50" height="50" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="#ffe700"/>
+        <text x = "50" y="60" font-size="40" text-anchor="middle" fill="#2f63ff">EL</text>
+      </svg>
+    </div>
+    <h1>English Learning</h1>
+  </header>
+  <nav>
+    <div>
+      <a href="#home">Trang chủ</a>
+      <a href="#course">Khóa học</a>
+      <a href="#Register">Đăng kí</a>
+      <a href="#Information">Giới thiệu</a>
+    </div>
+  </nav>
+  <div class = "content">
+    <h2>Beginer English Course</h2>
+    <img src = "https://static.vecteezy.com/system/resources/previews/027/192/313/non_2x/a-girl-wearing-a-panama-with-a-picture-of-the-british-flag-logo-concept-for-english-language-learning-school-online-courses-vector.jpg" alt="English Course">
+    <p><strong>Start your English journey with us!</strong>
+      Our Beginner English Course is designed for those new to the language. Learn essential vocabulary, grammar, and conversation skills through interactive lessons.
+    </p>
+    <p>Join our experienced teachers and start speaking English confidently. 
+    <strong>Enroll today!</strong>
+    </p>
+  </div>
+</body>
+</html>
+
+ Câu 2: <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Items and Advert</title>
+     <style>
+         .item{
+             width: 200px;
+             height: 200px;
+             margin: 10px;
+             background-color:grey;
+             display: inline-block;
+         }
+         .advert{
+             width: 100px;
+             height: 200px;
+             background-color: #2fcbff;
+             border:2px solid #2f63ff;
+             margin: 10px;
+             text-align: center;
+             line-height: 200px;
+             font-size: 15px;
+         }
+     </style>
+ </head>
+ <body>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="advert">Advertisement</div>
+ </body>
+ </html>
+ Câu 3: 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course List</title>
+    <style>
+        .course{
+            border: 1px solid #2f63ff;
+            padding: 15px;
+            margin: 10px;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="course-container"></div>
+    <script>
+        const courses = [
+            {
+                name: "Beginner English",
+                description: "Learn basic vocabulary and grammar.",
+                fee: "2,000,000 VND",
+                startDate: "2025-06-01"
+            },
+            {
+                name: "Intermediate English",
+                description: "Improve your speaking and writing skills.",
+                fee: "3,000,000 VND",
+                startDate: "2025-06-15"
+            },
+            {
+                name: "Advanced English",
+                description: "Master complex grammar and fluency.",
+                fee: "4,000,000 VND",
+                startDate: "2025-07-01"
+            },
+            {
+                name: "Business English",
+                description: "English for professional settings.",
+                fee: "3,500,000 VND",
+                startDate: "2025-07-15"
+            }
+        ];
+        let i=0;
+        const container = document.getElementById('course-container');
+        while (i < courses.length) {
+            const course = courses[i];
+            const div = document.createElement('div');
+            div.className = 'course';
+            div.innerHTML = `
+                <h3>${course.name}</h3>
+                <p>${course.description}</p>
+                <p><strong>Fee:</strong> ${course.fee}</p>
+                <p><strong>Start Date:</strong> ${course.startDate}</p>
+            `;
+            container.appendChild(div);
+            i++;
+        }
+    </script>
+</body>
+</html>
+ Câu 4: 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #2f63ff;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #00b253;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00e56b;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 414px) {
+            .form-container {
+                padding: 10px;
+            }
+            input, select, button {
+                font-size: 14px;
+            }
+        }
+        @media (min-width: 415px) and (max-width: 1024px) {
+            .form-container {
+                max-width: 80%;
+            }
+        }
+        @media (min-width: 1025px) {
+            .form-container {
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Course Registration</h2>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required>
+            <span class="error" id="fullNameError"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <span class="error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+            <span class="error" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+            <label for="course">Course</label>
+            <select id="course" required>
+                <option value="">Select a course</option>
+                <option value="Beginner English">Beginner English</option>
+                <option value="Intermediate English">Intermediate English</option>
+                <option value="Advanced English">Advanced English</option>
+                <option value="Business English">Business English</option>
+            </select>
+            <span class="error" id="courseError"></span>
+        </div>
+        <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <select id="time" required>
+                <option value="">Select a time</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            <span class="error" id="timeError"></span>
+        </div>
+        <button onclick="validateForm()">Submit</button>
+    </div>
+    <script>
+        function validateForm() {
+            let isValid = true;
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+            const time = document.getElementById('time').value;
+
+            // Reset error messages
+            document.getElementById('fullNameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('phoneError').textContent = '';
+            document.getElementById('courseError').textContent = '';
+            document.getElementById('timeError').textContent = '';
+
+            // Validate Full Name
+            if (!fullName || fullName.length < 2) {
+                document.getElementById('fullNameError').textContent = 'Full name must be at least 2 characters.';
+                isValid = false;
+            }
+
+            // Validate Email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email.';
+                isValid = false;
+            }
+
+            // Validate Phone
+            const phoneRegex = /^[0-9]{10,12}$/;
+            if (!phoneRegex.test(phone)) {
+                document.getElementById('phoneError').textContent = 'Phone number must be 10-12 digits.';
+                isValid = false;
+            }
+
+            // Validate Course
+            if (!course) {
+                document.getElementById('courseError').textContent = 'Please select a course.';
+                isValid = false;
+            }
+
+            // Validate Time
+            if (!time) {
+                document.getElementById('timeError').textContent = 'Please select a preferred time.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Form submitted successfully!');
+            }
+        }
+    </script>
+</body>
+</html>
+ Câu 5: 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Learning</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Rial, sans-serif;
+            }
+            header{
+            background-color: #2f63ff;
+            color: white;
+            padding: 20px 20px 20px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            }
+        .logo{
+            display: inline-block;
+            padding: 5px;
+        }
+        h1{
+        margin:0;
+        }
+        .slogan {
+            font-style: italic;
+            color: #ffe700;
+            margin-top: 5px; /* Reduced spacing for slogan */
+        }
+        nav{
+      background-color: #ffe700;
+      padding: 8px;
+      display:flex;
+      justify-content: center;
+        }
+        nav a {
+        color: grey;
+        text-decoration: none;
+        margin: 0 50px;
+        font-size: 15px;
+        }
+        nav a:hover {
+        color: white;
+        }
+        .advert {
+            width: 100%;
+            max-width: 800px;
+            height: 200px;
+            background-color: #2f63ff;
+            border: 2px solid #ffe700 ;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 200px;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+        .advert:hover {
+            background-color: #00e56b;
+            border-color: #ffe700;
+            font-style: italic;
+        }
+        .courses-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .item {
+            width: 250px;
+            height: 180px;
+            background-color: #00e56b;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .form-container {
+            max-width: 600px;
+            width: 100%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #2f63ff;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #00b253;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00e56b;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            display: block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 414px) {
+            .item {
+                width: 100%;
+                max-width: 300px;
+                margin: 10px auto;
+            }
+            .form-container {
+                padding: 10px;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        @media (min-width: 415px) and (max-width: 1024px) {
+            .item {
+                width: 45%;
+                max-width: 300px;
+                margin: 10px;
+            }
+            .form-container {
+                max-width: 80%;
+            }
+        }
+        @media (min-width: 1025px) {
+            .item {
+                width: 200px;
+            }
+            .form-container {
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="#ffe700"/>
+            <text x = "50" y="60" font-size="40" text-anchor="middle" fill="#2f63ff">EL</text>
+        </svg>
+        </div>
+        <h1>English Learning</h1>
+        <p class="slogan">Learn English, Unlock Your Future!</p>
+    </header>
+    <nav>
+        <div>
+        <a href="Câu 5.html">Trang chủ</a>
+        <a href="Câu 3.html">Khóa học</a>
+        <a href="Câu 4.html">Đăng kí</a>
+        <a href="Câu 1.html">Giới thiệu</a>
+        </div>
+    </nav>    
+    <div class="advert">Special Offer: 20% Off All Courses!</div>
+    <div class="courses-container" id="course-container"></div>
+    <div class="form-container">
+        <h2>Course Registration</h2>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required>
+            <span class="error" id="fullNameError"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <span class="error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+            <span class="error" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+            <label for="course">Course</label>
+            <select id="course" required>
+                <option value="">Select a course</option>
+                <option value="Beginner English">Beginner English</option>
+                <option value="Intermediate English">Intermediate English</option>
+                <option value="Advanced English">Advanced English</option>
+                <option value="Business English">Business English</option>
+            </select>
+            <span class="error" id="courseError"></span>
+        </div>
+        <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <select id="time" required>
+                <option value="">Select a time</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+            <span class="error" id="timeError"></span>
+        </div>
+        <button onclick="validateForm()">Submit</button>
+    </div>
+    <script>
+        const courses = [
+            {
+                name: "Beginner English",
+                description: "Learn basic vocabulary and grammar.",
+                fee: "2,000,000 VND",
+                startDate: "2025-06-01"
+            },
+            {
+                name: "Intermediate English",
+                description: "Improve your speaking and writing skills.",
+                fee: "3,000,000 VND",
+                startDate: "2025-06-15"
+            },
+            {
+                name: "Advanced English",
+                description: "Master complex grammar and fluency.",
+                fee: "4,000,000 VND",
+                startDate: "2025-07-01"
+            },
+            {
+                name: "Business English",
+                description: "English for professional settings.",
+                fee: "3,500,000 VND",
+                startDate: "2025-07-15"
+            }
+        ];
+
+        let i = 0;
+        const container = document.getElementById('course-container');
+        while (i < courses.length) {
+            const course = courses[i];
+            const div = document.createElement('div');
+            div.className = 'item';
+            div.innerHTML = `
+                <h3>${course.name}</h3>
+                <p>${course.description}</p>
+                <p><strong>Fee:</strong> ${course.fee}</p>
+                <p><strong>Start:</strong> ${course.startDate}</p>
+            `;
+            container.appendChild(div);
+            i++;
+        }
+
+        function validateForm() {
+            let isValid = true;
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+            const time = document.getElementById('time').value;
+
+            document.getElementById('fullNameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('phoneError').textContent = '';
+            document.getElementById('courseError').textContent = '';
+            document.getElementById('timeError').textContent = '';
+
+            if (!fullName || fullName.length < 2) {
+                document.getElementById('fullNameError').textContent = 'Full name must be at least 2 characters.';
+                isValid = false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email.';
+                isValid = false;
+            }
+
+            const phoneRegex = /^[0-9]{10,12}$/;
+            if (!phoneRegex.test(phone)) {
+                document.getElementById('phoneError').textContent = 'Phone number must be 10-12 digits.';
+                isValid = false;
+            }
+
+            if (!course) {
+                document.getElementById('courseError').textContent = 'Please select a course.';
+                isValid = false;
+            }
+
+            if (!time) {
+                document.getElementById('timeError').textContent = 'Please select a preferred time.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Form submitted successfully!');
+            }
+        }
+    </script>
+</body>
+</html>
